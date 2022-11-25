@@ -43,7 +43,7 @@ public class UsuarioComumController {
 		UCEntity.setNascimento(usuario.getNascimento());
 		UCEntity.setEndereco(usuario.getEndereco());
 		UCEntity.setCep(usuario.getCep());
-		
+		usuario.setId(usuario.getId());
 		UsuarioComumRepository.save(UCEntity);
 
 		return usuario;
@@ -95,7 +95,7 @@ public class UsuarioComumController {
 		usuarioEntity.setNascimento(usuario.getNascimento());
 		usuarioEntity.setEndereco(usuario.getEndereco());
 		usuarioEntity.setCep(usuario.getCep());
-		
+		usuario.setId(usuarioEntity.getId());
 		UsuarioComumRepository.save(usuarioEntity);
 		
 		return usuario;
