@@ -49,8 +49,8 @@ public class PacienteCadastroController {
 		paciente1.setNascimento(paciente.getNascimento());
 		paciente1.setEndereco(paciente.getEndereco());
 		paciente1.setCep(paciente.getCep());
-		paciente.setId(paciente1.getId());
 		pacienteRepository.save(paciente1);
+		paciente.setId(paciente1.getId());
 		
 
 		return paciente1;
@@ -100,8 +100,8 @@ public class PacienteCadastroController {
 		paciente1.setNascimento(paciente.getNascimento());
 		paciente1.setEndereco(paciente.getEndereco());
 		paciente1.setCep(paciente.getCep());
-		paciente.setId(paciente1.getId());
 		pacienteRepository.save(paciente1);
+		paciente.setId(paciente1.getId());
 
 		return paciente;
 	}
