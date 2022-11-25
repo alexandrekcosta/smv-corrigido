@@ -49,8 +49,9 @@ public class PacienteCadastroController {
 		paciente1.setNascimento(paciente.getNascimento());
 		paciente1.setEndereco(paciente.getEndereco());
 		paciente1.setCep(paciente.getCep());
-		pacienteRepository.save(paciente1);
 		paciente.setId(paciente1.getId());
+		pacienteRepository.save(paciente1);
+		
 
 		return paciente1;
 	}
