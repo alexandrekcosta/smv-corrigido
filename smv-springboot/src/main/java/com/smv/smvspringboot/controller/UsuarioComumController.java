@@ -96,7 +96,7 @@ public class UsuarioComumController {
 		usuarioEntity.setEndereco(usuario.getEndereco());
 		usuarioEntity.setCep(usuario.getCep());
 		UsuarioComumRepository.save(usuarioEntity);
-		paciente.setId(paciente1.getId());
+		usuario.setId(usuarioEntity.getId());
 		
 		return usuario;
 	}
