@@ -44,7 +44,7 @@ public class UsuarioComumController {
 		UCEntity.setEndereco(usuario.getEndereco());
 		UCEntity.setCep(usuario.getCep());
 		UsuarioComumRepository.save(UCEntity);
-		paciente.setId(paciente1.getId());
+		usuario.setId(UCEntity.getId());
 
 		return usuario;
 
